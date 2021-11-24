@@ -1,0 +1,12 @@
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\bin\Debug\projetBloc4Individuel.exe.config
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\bin\Debug\projetBloc4Individuel.exe
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\bin\Debug\projetBloc4Individuel.pdb
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.csproj.AssemblyReference.cache
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.Form1.resources
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.FormApplication.resources
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.InterfaceGraphique.InterfaceSites.FormManageSites.resources
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.Properties.Resources.resources
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.csproj.GenerateResource.cache
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.csproj.CoreCompileInputs.cache
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.exe
+C:\Users\Benaf\OneDrive\Documents\Cours cesi\projetBloc4Individuel\obj\Debug\projetBloc4Individuel.pdb

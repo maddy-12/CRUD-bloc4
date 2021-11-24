@@ -9,7 +9,7 @@ namespace projetBloc4Individuel.GestionSites
 {
    public class ManageSites
     {
-        List<Site> liste_sites = new List<Site>();
+        static List<Site> liste_sites = new List<Site>();
         private static int NumberOfSites;
 
         //Add a new site
@@ -21,6 +21,7 @@ namespace projetBloc4Individuel.GestionSites
             } else
             {
                 site.Id = ++ManageSites.NumberOfSites;
+                site.CreationDate = DateTime.Now;
                 liste_sites.Add(site);
             }
             return site.Id;
@@ -33,12 +34,16 @@ namespace projetBloc4Individuel.GestionSites
                   if (site.Id == 0)
                       throw new UpdateInexsitantObject("Impossible");
                   Site s = this.SearchById(site.Id);
+                //Méthode 1
+               //   s.Id = site.Id;
+               //   s.Name = site.Name;
+               //   s.CreationDate = site.CreationDate;
+               //   s.UpdateDate = site.UpdateDate;
 
-                  s.Id = site.Id;
-                  s.Name = site.Name;
-                  s.CreationDate = site.CreationDate;
-                  s.UpdateDate = site.UpdateDate;
-
+                //Méthode 2
+                  site.CreationDate = DateTime.Now;
+                  liste_sites.Insert(liste_sites.IndexOf(s), site);
+                    
                   return site.Id;
               }
 
@@ -67,6 +72,60 @@ namespace projetBloc4Individuel.GestionSites
         public List<Site> GetSites()
         {
             return liste_sites;
+        }
+
+        public Site Start()
+        {
+            if (liste_sites.Count > 0)
+            {
+                return liste_sites[0];
+            } else
+            {
+                return null;
+            }
+        }
+
+        //bouton suivant
+        public Site Next(int id)
+        {
+            Site site = this.SearchById(id);
+            int index = liste_sites.IndexOf(site);
+            if ((liste_sites.Count - 1) >= (index + 1))
+            {
+                return liste_sites[index + 1];
+            }else
+            {
+                return null;
+            }
+
+        }
+
+        //bouton précédent
+        public Site Previous(int id)
+        {
+            Site site = this.SearchById(id);
+            int index = liste_sites.IndexOf(site);
+            if ((liste_sites.Count - 1) >= (index - 1))
+            {
+                return liste_sites[index - 1];
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        //bouton fini
+        public Site Finish()
+        {
+            if (liste_sites.Count > 0)
+            {
+                return liste_sites[liste_sites.Count - 1];
+            } else
+            {
+                return null;
+            }
+
         }
     }
 }
